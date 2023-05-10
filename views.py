@@ -1,11 +1,7 @@
-from presenter import (add_to_articles,
-                       read_articles,
-                       get_article_number,
+from presenter import (read_articles,
                        read_file,
-                       write_file,
                        edit_article,
                        create_article,
-                       check_number,
                        del_article,
                        print_article)
 articles = read_file()
@@ -32,6 +28,7 @@ while True:
 
     elif choice == "5":
         edit_article(articles)
+
     elif choice == "6":
         break
 
